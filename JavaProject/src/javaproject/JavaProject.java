@@ -15,7 +15,27 @@ public class JavaProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        bicycleDemo();
     }
     
+    private static void bicycleDemo()
+    {
+        // create two different bicycle objects
+        Bicycle bike1 = new Bicycle();
+        Bicycle bike2 = new Bicycle();
+        
+        // invoke methods on those projects
+        bike1.changeCadence(50);
+        bike1.speedUp(10);
+        bike1.changeGear(2);
+        bike1.printStates();
+        
+        bike2.changeCadence(50);
+        bike2.speedUp(10);
+        bike2.changeGear(2);
+        bike2.changeCadence(40);
+        bike2.speedUp(10);
+        bike2.changeGear(3);
+        bike2.printStates();
+    }
 }
