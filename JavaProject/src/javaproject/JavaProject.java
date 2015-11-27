@@ -21,8 +21,8 @@ public class JavaProject {
     private static void bicycleDemo()
     {
         // create two different bicycle objects
-        Bicycle bike1 = new Bicycle();
-        Bicycle bike2 = new Bicycle();
+        Bicycle bike1 = new Bicycle(0,0,0);
+        Bicycle bike2 = new Bicycle(0,0,0);
         
         // invoke methods on those projects
         bike1.changeCadence(50);
