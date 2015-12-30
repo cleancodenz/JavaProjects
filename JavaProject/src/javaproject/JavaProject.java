@@ -5,6 +5,9 @@
  */
 package javaproject;
 
+import java.io.IOException;
+import javaproject.IOExample.CopyBytes;
+
 /**
  *
  * @author johnson
@@ -15,7 +18,17 @@ public class JavaProject {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        bicycleDemo();
+       // bicycleDemo();
+        try
+        {            
+            CopyBytes demo = new CopyBytes();
+            demo.Do();
+        }
+        catch(IOException e)
+        {
+            
+        }
+        
     }
     
     private static void bicycleDemo()
