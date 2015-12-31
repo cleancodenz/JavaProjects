@@ -5,6 +5,7 @@ This is much easy as most classes and start up class are packed into the .jar fi
 java -jar pathtojar/myjar.jar
 
 when reference a lib, in project / libraries/ add jar file or project if you have source which makes no difference when host jar is finally generated 
+Changes of libraries project foler will touch project.properties and project.xml files which are under nbproject which is in source control
 When build under dist folder, myjar.jar will have a lib folder which has the referenced jar,
 and in mf of jar CLASSPATH will be set to lib/reference.jar
 
