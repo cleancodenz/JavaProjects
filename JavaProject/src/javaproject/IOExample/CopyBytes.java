@@ -30,6 +30,7 @@ public class CopyBytes
             // one byte a time
             while((c=in.read())!=-1)
             {
+                System.out.format("%c",(char)c);
                 
                 out.write(c);
             }
