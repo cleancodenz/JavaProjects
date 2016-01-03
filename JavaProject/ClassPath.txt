@@ -39,4 +39,13 @@ While if the jar is somewhere under current dir, relative path  is ok
 
 java -cp .:javaproject/RectangleAreaLib.jar  javaproject.ExternalLib.AreaApp
 
+Library management in Net beans:
+
+You can can add lib to projects/libraries, Or property/libraries/Add Project
+This will only point the build to another project
+The library itself will not be imported into the host project
+
+One way of doing it is copy the file to lib folder and Property/Libraries/ Add jar/Folder, this will add jar to project source
+
+
  
