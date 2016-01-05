@@ -9,6 +9,8 @@ package dictionary.spi;
  *
  * @author johnson
  */
-public class Dictionary {
+public interface Dictionary {
+    
+     public String getDefinition(String word);
     
 }
