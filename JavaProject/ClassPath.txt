@@ -48,4 +48,9 @@ The library itself will not be imported into the host project
 One way of doing it is copy the file to lib folder and Property/Libraries/ Add jar/Folder, this will add jar to project source
 
 
+Using Service loader
+
+Service loader looking config file for META-INF/services/dictionary.spi.Dictionary which is type of ServiceLoader<Dicitonary>, in config file it points to an implementation of Dictionary
+java -Djava.ext.dirs=DictionaryServiceProvider/dist:GeneralDictionary/dist -cp . -jar DictionaryDemo/dist/DictionaryDemo.jar 
+
  
