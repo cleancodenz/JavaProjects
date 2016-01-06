@@ -52,5 +52,7 @@ Using Service loader
 
 Service loader looking config file for META-INF/services/dictionary.spi.Dictionary which is type of ServiceLoader<Dicitonary>, in config file it points to an implementation of Dictionary
 java -Djava.ext.dirs=DictionaryServiceProvider/dist:GeneralDictionary/dist -cp . -jar DictionaryDemo/dist/DictionaryDemo.jar 
+or 
+java -cp .:DictionaryServiceProvider/dist:GeneralDictionary/dist  -jar DictionaryDemo/dist/DictionaryDemo.jar
 
  
